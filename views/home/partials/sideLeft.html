@@ -1,0 +1,17 @@
+<div class="three columns pull-six">
+    <div class="panel">
+        <a href="#"><img src="/img/zodiac.png" /></a>
+        <h5><a href="#">All Zodiacs</a></h5>
+
+        <dl class="vertical tabs">
+
+            <?php foreach ( $this->zodiacs as $zodiac ) { ?>
+
+            <dd><a href="#<?php echo strtolower($zodiac['name']); ?>"><?php echo $zodiac['name']; ?></a></dd>
+
+            <?php } ?>
+
+        </dl>
+
+    </div>
+</div>

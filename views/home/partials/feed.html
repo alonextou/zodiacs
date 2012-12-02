@@ -1,0 +1,31 @@
+<div class="six columns push-three">
+
+    <div class="row">
+
+        <?php foreach ( $this->zodiacs as $zodiac ) { ?>
+
+        <div class="two columns mobile-one">
+            <img src="/img/zodiacs/<?php echo strtolower($zodiac['name']); ?>.png" style="position: relative; top: 32px;" />
+        </div>
+
+        <div class="ten columns">
+
+            <h4 id="<?php echo strtolower($zodiac['name']); ?>"><strong><?php echo $zodiac['name'] ?></strong></h4>
+            <ul>
+                <li>
+                    <strong>Season:</strong> <?php echo $zodiac['season'] ?>
+                </li>
+                <li>
+                    <strong>Element:</strong> <?php echo $zodiac['element'] ?>
+                </li>
+            </ul>
+
+        </div>
+
+        <hr>
+
+        <?php } ?>
+
+    </div>
+
+</div>
