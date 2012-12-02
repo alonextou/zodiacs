@@ -14,11 +14,18 @@
 <body>
 
 <div class="row">
-    <?php include 'partials/header.html'; ?>
+    <div class="twelve columns">
+        <div class="panel">
+            <img src="http://cdn1.iconfinder.com/data/icons/animals/48/Panda.png" style="float: right; position: relative; top: 10px;">
+            <a href="index.php"><h1>Zodiacs</h1></a>
+        </div>
+    </div>
 </div>
 
 <div class="row">
-    You lost?
+    <div class="twelve columns text-center">
+        <img src="/img/404.png" width="600px">
+    </div>
 </div>
 
 </body>

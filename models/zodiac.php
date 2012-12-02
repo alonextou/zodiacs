@@ -11,8 +11,7 @@ class ZodiacModel extends Model {
     }
 
     function create($zodiac) {
-        var_dump($zodiac);
-        $this->db->insert('zodiacs', array('nig', 'nog'));
+
     }
 
 }
