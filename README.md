@@ -1,10 +1,12 @@
-               _      ____     ___     ____      ______  _______    ___       __
-               (___   )   )   (   |    \  (_    _)    /  \     /  __)  )  ____)
-                  /  /   /     \  |     |   |  |     /    \   |  /    (  (___
-                 /  /   (       ) |     |   |  |    /  ()  \  | |      \___  \
-                /  /__   \     /  |     |  _|  |_  |   __   | |  \__   ____)  )
-               (      )___)   (___|    /__(      )_|  (__)  |__\    )_(      (__
+_      ____     ___     ____      ______  _______    ___       __
+(___   )   )   (   |    \  (_    _)    /  \     /  __)  )  ____)
+  /  /   /     \  |     |   |  |     /    \   |  /    (  (___
+ /  /   (       ) |     |   |  |    /  ()  \  | |      \___  \
+/  /__   \     /  |     |  _|  |_  |   __   | |  \__   ____)  )
+(      )___)   (___|    /__(      )_|  (__)  |__\    )_(      (__
 
+
+* Important: If you are connecting to your own database, you will need to visit domain.com/install.php first.
 
 I kept telling myself I would not use formal MVC for this project, so it would remain very simple and easy to
 understand. The more I kept going though, the more convoluted the code got, and so I did this entire rewrite.

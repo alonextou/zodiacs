@@ -1,7 +1,18 @@
 <?php
 
-$db = new PDO('sqlite:/var/www/zodiac/data/zodiac.sqlite3');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// This entire class should be rewritten to be a method, rather than a page in /public.
+
+require '../config.php';
+require '../libraries/database.php';
+
+$db = new Database();
+
+// Although PDO is supposed to be database agnostic, I still found this minor difference:
+if (DB_TYPE == 'sqlite') {
+    $autoIncrement = 'AUTOINCREMENT';
+} else if (DB_TYPE == 'mysql') {
+    $autoIncrement = 'AUTO_INCREMENT';
+}
 
 $messages = array();
 
@@ -24,7 +35,7 @@ try {
 // Creating our Zodiacs table...
 try {
     $sql = "CREATE TABLE IF NOT EXISTS zodiacs (
-		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		id INTEGER PRIMARY KEY " . $autoIncrement . ",
 		name TEXT,
 		season TEXT,
 		element TEXT
@@ -77,7 +88,7 @@ foreach ( $zodiacs as $zodiac ) {
 // Now lets create a config table.
 try {
     $sql = "CREATE TABLE IF NOT EXISTS config (
-		id INTEGER PRIMARY KEY AUTOINCREMENT,
+		id INTEGER PRIMARY KEY " . $autoIncrement . ",
 		name TEXT,
 		setting TEXT
 	)";
