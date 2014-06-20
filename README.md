@@ -1,7 +1,9 @@
 Simple MVC demonstration.
-
-*Installation:
+==
+Installation
+--
 If you are connecting to your own database, you will need to visit domain.com/install.php first.
+
 
 My biggest intention with this app is to present a friendly introduction to MVC architecture, because I
 think it helps to have some of basic building block knowledge before jumping into a framework. Although,
