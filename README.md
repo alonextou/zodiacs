@@ -1,11 +1,7 @@
-This is temporarily hosted at: http://zodiacs.jwen.us/
+Simple MVC demonstration.
 
-Important: If you are connecting to your own database, you will need to visit domain.com/install.php first.
-
-I kept telling myself I would not use formal MVC for this project, so it would remain very simple and easy to
-understand. The more I kept going though, the more convoluted the code got, and so I did this entire rewrite.
-This code is drastically different from the last app. I will be loading this with comments to make it very
-simple to follow.
+*Installation:
+If you are connecting to your own database, you will need to visit domain.com/install.php first.
 
 My biggest intention with this app is to present a friendly introduction to MVC architecture, because I
 think it helps to have some of basic building block knowledge before jumping into a framework. Although,
